@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mis emociones - MindLink</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<script defer src="js/navbar.js"></script>
+<script defer src="js/emociones.js"></script>
+
+</head>
+<body>
+
+<main class="card">
+  <h2>Mis emociones</h2>
+
+  <label for="mood-select">Estado de ánimo</label>
+  <select id="mood-select">
+    <option value="">Selecciona...</option>
+    <option value="Feliz">Feliz</option>
+    <option value="Triste">Triste</option>
+    <option value="Ansioso">Ansioso</option>
+    <option value="Enojado">Enojado</option>
+    <option value="Neutral">Neutral</option>
+    <option value="Enamorado">Enamorado</option>
+  </select>
+
+  <label for="mood-note">Nota</label>
+  <textarea id="mood-note" rows="3" placeholder="Describe tu estado..."></textarea>
+
+  <button id="btnSave">Guardar</button>
+
+  <hr>
+  <label for="filter-mood">Filtrar por estado:</label>
+  <select id="filter-mood">
+    <option value="">Todos</option>
+    <option value="Feliz">Feliz</option>
+    <option value="Triste">Triste</option>
+    <option value="Ansioso">Ansioso</option>
+    <option value="Enojado">Enojado</option>
+    <option value="Neutral">Neutral</option>
+  </select>
+
+  <div id="emotions-list" style="margin-top:16px;"></div>
+
+</main>
+
+</body>
+</html>
